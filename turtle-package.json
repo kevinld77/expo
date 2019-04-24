@@ -1,0 +1,26 @@
+{
+  "name": "turtle-shellapp",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Expo",
+  "license": "MIT",
+  "exp": {
+    "sdkVersion": "33.0.0"
+  },
+  "workspaces": [
+    ".",
+    "tools-public"
+  ],
+  "dependencies": {
+    "react-native-unimodules": "~0.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.15.3",
+    "eslint-config-universe": "^2.0.0-alpha.0",
+    "expo-cli": "^2.13.0",
+    "expo-yarn-workspaces": "^1.1.0",
+    "prettier": "^1.16.4"
+  }
+}

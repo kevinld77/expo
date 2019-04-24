@@ -14,6 +14,7 @@ ln -s ${ROOT_DIR}/secrets $TEMP_DIR/secrets
 ln -s ${ROOT_DIR}/template-files $TEMP_DIR/template-files
 ln -s ${ROOT_DIR}/android $TEMP_DIR/android
 ln -s ${ROOT_DIR}/package.json $TEMP_DIR/package.json
+ln -s ${ROOT_DIR}/turtle-package.json $TEMP_DIR/universe-package.json
 ln -s ${ROOT_DIR}/expokit-npm-package $TEMP_DIR/expokit-npm-package
 ln -s ${ROOT_DIR}/packages $TEMP_DIR/packages
 
