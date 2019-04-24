@@ -123,17 +123,8 @@ public abstract class AppLoader {
           onError(e);
         }
 
-        if (Constants.isStandaloneApp()) {
-          // in shell/detached apps with SDK <26, we should default to 0 timeout to not introduce a breaking change
-          if (manifestSdkVersion != null) {
-            if (ABIVersion.toNumber(manifestSdkVersion) < ABIVersion.toNumber("26.0.0")) {
-              fallbackToCacheTimeout = DEFAULT_TIMEOUT_LENGTH_BEFORE_SDK26;
-            }
-          }
-        } else {
-          // only support checkAutomatically: never in shell & detached apps
-          shouldCheckForUpdate = true;
-        }
+        // only support checkAutomatically: never in shell & detached apps
+        shouldCheckForUpdate = true;
 
         if (mUseCacheOnly) {
           // finally, ignore everything else and don't check for updates if this is a cache-only AppLoader
